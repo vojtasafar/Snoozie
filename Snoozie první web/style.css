@@ -1,0 +1,470 @@
+html {scroll-behavior: smooth;}
+
+:root {--primary-color: #26C281;
+--primary-color-dark: #126d14;
+--secondary-color: #f8f4f4;
+--text-color: #333;
+}
+
+body {
+font-family: Nunito;
+background-color: white;
+margin: 0;
+}
+
+header {
+    background-color: #fff !important;
+    color: #000;
+    padding-top: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+}
+#logo {
+    display: inline-block;
+    margin-right: 20px;
+    vertical-align: middle;
+    
+
+}
+#logo img {
+    width: 180px; 
+    height: 65px; 
+    vertical-align: middle;
+    margin-top: -10px
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+    margin-right: 10px;
+    height: 100px;
+    color:#000;
+    
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+nav ul li:hover {
+font-weight: bold;
+color: var(--primary-color) !important;}
+
+nav ul li a {
+    color: #000;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.button {
+background-color: var(--primary-color);
+border: none;
+color: #fff;
+border-radius: 30px;
+padding: 1rem;
+width: fit-content;
+font-size: 1rem;
+transition: 0.3s;
+cursor: pointer;
+box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+margin-left: 20px;
+}
+
+.button:hover {
+background-color: var(--primary-color-dark);
+}
+
+
+#úvod, #kbt {
+max-width: 1200px;
+padding: 1rem;
+min-height: calc(100vh - 100px);
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+gap: 5rem;
+margin: 10px;
+padding-top:40px;
+text-align: left;
+}
+
+
+.container {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: start;
+}
+
+#kbt h1 {
+margin-left:  30px;
+color: var(--primary-color);
+}
+
+#úvod h1 {
+font-size: 3rem !important;
+font-weight: 400;
+line-height: 3rem;
+color: var(--primary-color);
+margin-bottom: 0;
+}
+
+#kbt p {color: var(--text-color);
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+    font-size:1.5rem;}
+
+#úvod p {
+color: var(--text-color);
+margin-bottom: 2rem;
+font-size:2rem;
+}
+
+.obrázky-kbt {
+padding: 20px;
+margin-top: 30px;
+
+}
+.obrázky-kbt img {
+    width: 100%;
+    max-width: 300px;
+    margin-left: 80px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.obrázky-kbt img:nth-child(1) {
+    transform:translateX(70px);
+}
+
+.obrázky-kbt img:nth-child(2) {
+    transform:translateX(-70px);
+}
+
+#fungování {
+
+padding: 10px;
+/*background-image: linear-gradient(to bottom, white, var(--secondary-color));*/
+}
+
+#jaktofunguje {
+display: flex;
+grid-template-columns: repeat(4, 1fr); 
+gap: 20px; 
+margin: 20px;
+}
+
+.ikona {
+max-width:40%;
+display: block;
+margin:0 auto;
+}
+
+.sekce h1 {
+text-align:center;
+font-size: 2rem;}
+
+.sekce p {
+margin-left: 10px;
+text-align: start;}
+
+.průběh {
+background-color: white;
+border-radius:10px;
+width: 40px;
+flex: 1; 
+padding: 20px;
+text-align: center;
+box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.screen {
+width: 400%;
+max-width: 700px;
+height: auto;
+margin-left: -70px;
+}
+
+.výzva {
+background-color: var(--primary-color);
+width: 90%;
+height: auto;
+border-radius: 10px;
+padding: 20px;
+margin: 0 auto;
+margin-bottom: 40px;;
+box-shadow:5px 5px 30px rgba(0, 0, 0, 0.2) ;
+font-weight: 200;
+display: flex; 
+justify-content: space-between; 
+align-items: center; 
+}
+
+.výzva h1 {
+    text-align: left;
+}
+.výzva img {
+    margin-left: auto;
+}
+.kontakty {margin-right: 20px;}
+
+.kontakty h1, .kontakty h2 {
+margin-left: 30px;
+font-weight: 400;}
+
+input {
+margin-left: 30px;
+width: 100%;
+max-width: 200px;
+padding: 0.5rem;
+font-size: 1rem;
+outline:none;
+border: none;
+box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+border-radius: 10px;
+margin-right: 10px;
+}
+
+.kontakty button {
+width: fit-content;
+padding: 0.5rem;
+font-size: 1rem;
+white-space: nowrap;
+background-color: var(--primary-color);
+color:#000;
+outline: none;
+border: 1px white solid;
+box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+transition: 0.3s;
+cursor: pointer;
+border-radius: 10px;
+}
+
+.kontakty button:hover {
+background-color: var(--primary-color-dark);
+}
+
+footer {
+background-color:  var(--secondary-color);
+padding: 20px;
+margin: 0 auto;
+width: 95%;
+border-radius: 10px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+}
+
+.footerleft {
+display: flex;
+align-items: center;
+}
+
+.social-icons {
+ display: flex;
+ align-items: center;
+ }
+
+.socialky {
+width:40px;
+height: auto;
+max-width: 100%;
+margin-left: 10px;
+margin-right: 10px;
+}
+
+.social-icons img {
+    width:40px;
+    height: auto;
+    max-width: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+footer h1 {
+font-size:1.5rem;
+font-weight: 300;}
+
+#fungování {
+    scroll-margin-top: 70px;
+    }
+
+section {
+    scroll-margin-top: 50px;
+    }
+
+
+ @media (max-width: 550px) {
+    header nav {
+          display: none;
+     }
+     #logo img {
+        width: 120px; 
+        height: auto; 
+        vertical-align: middle;
+        margin-top: 10px
+    }
+ }
+
+ @media (max-width: 768px) {
+    #úvod {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center; /* Center align all content */
+    }
+
+    .screen {
+        order: -1; /* Move the image to the top */
+        margin-bottom: 20px; /* Add spacing between image and text */
+        width: 80%; /* Adjust width of the image */
+    }
+
+    #úvod h1{
+        font-size: 1.5rem; 
+        margin: 0.5rem 0;
+        text-align: center !important;
+        margin-top: -70px;
+    }
+
+    #úvod p {
+        font-size: 1.5rem; 
+        margin: 0.5rem 0;
+        text-align: center !important;
+    }
+
+    #úvod button {
+       display: none;
+    }
+}
+
+@media (max-width: 1000px) {
+    #jaktofunguje {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .průběh {
+        width: 90%; /* Take up 90% of the screen width */
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px; /* Add spacing between divs */
+    }
+
+    .průběh .ikona {
+        width: 60px; /* Adjust width of the icon */
+        height: auto;
+        margin-right: 20px; /* Increase spacing between icon and text */
+    }
+
+    .průběh h3 {
+        font-size: 1.25rem; /* Adjust font size of the heading */
+        margin-right: 20px;;
+    }
+
+    .průběh p {
+        font-size: 1rem; /* Adjust font size of the paragraph */
+        margin: 0; /* Reset margin */
+    }
+}
+
+#kontakt .výzva {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center items horizontally */
+  }
+  
+  #kontakt .screen {
+    width: 100%;
+    max-width: 700px; /* Adjust the max-width as needed */
+    margin-bottom: 20px; /* Add margin between the screen and other content */
+  }
+  
+  @media (min-width: 769px) {
+    #kontakt .výzva {
+      flex-direction: row; /* Display elements side by side on larger screens */
+      justify-content: center; /* Center items horizontally */
+    }
+  
+    #kontakt .screen {
+      order: -1; /* Move the .screen to the top */
+      width: calc(50% - 20px); /* Adjust the width of .screen to fit half the container width with margin */
+      margin-right: 20px; /* Add margin between .screen and .kontakty */
+      margin-bottom: 0; /* Remove margin bottom for .screen */
+    }
+  
+    #kontakt .kontakty {
+      width: calc(50% - 20px); /* Adjust the width of .kontakty to fit half the container width with margin */
+    }
+  }
+
+  @media (max-width: 768px) {
+    
+    .social-icons h1 {
+      display: none; /* Hide the second h1 */
+    }
+  
+    .social-icons {
+      display: flex;
+    
+    }
+  
+    .footerleft .socialky {
+      margin: 5px;
+    
+    }
+  
+    footer h1 {
+      font-size: 1.2rem; /* Adjust the font size for h1 */
+    }
+  
+    .socialky {
+      width: 40px; 
+    }
+
+   
+  }
+
+
+#klon h1 {
+color: var(--primary-color);
+margin-top: -10px;
+}
+#klon p {
+font-size: 1.3rem;
+font-weight: 400;
+width: 90%;
+margin-left: 30px;
+text-align: center;
+margin-bottom: 40px;
+margin-top: -10px;
+}
+
+
+@media only screen and (max-width: 768px) {
+    #kbt {
+      display: none;
+    }
+
+  }
+
+  @media only screen and (min-width: 769px) {
+    #klon {
+      display: none;
+    }
+
+  }
