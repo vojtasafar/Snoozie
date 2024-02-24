@@ -78,9 +78,12 @@
       <div class="kontakty">
       <h1>Spuštění se blíží!</h1>
       <h2>Pokud máš problémy se spánkem a chceš si nechat pomoct, nech nám svůj email a my se Ti ozveme.</h2>
-      <label>
-      <input type="email" placeholder="Váš email"><button  type="submit">Odeslat</button>
-      </label>
+      <form method="post" action="https://formspree.io/f/xwkgbvpj">
+        <label for="email">
+          <input type="email" name="email" id="email" placeholder="Váš email" required>
+          <button type="submit" name="button">Odeslat</button>
+        </label>
+      </form>
       <h2>Nebo se nám ozvi Ty na: <b>chcisevyspat@gmail.com</b></h2>
      </div>  
       <img src="screen3.png" alt="aplikace snoozie" class="screen" loading="lazy">
