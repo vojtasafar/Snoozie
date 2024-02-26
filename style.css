@@ -468,3 +468,84 @@ margin-top: -10px;
     }
 
   }
+
+@media (max-width: 450px) {
+    #úvod {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center; /* Center align all content */
+    }
+
+    .screen {
+        order: -1; /* Move the image to the top */
+        margin-bottom: 20px; /* Add spacing between image and text */
+        width: 80%; /* Adjust width of the image */
+        margin-top: 80px;
+    }
+
+    #úvod h1{
+        font-size: 1.5rem; 
+        margin: 0.5rem 0;
+        text-align: center !important;
+        margin-top: -70px;
+    }
+
+    #úvod p {
+        font-size: 1.5rem; 
+        margin: 0.5rem 0;
+        text-align: center !important;
+        margin-bottom: -40px;
+    }
+
+    #úvod button {
+       display: none;
+    }
+}
+
+@media (max-width: 500px) {
+    #jaktofunguje {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .průběh {
+        width: 90%; /* Take up 90% of the screen width */
+        display: flex;
+        flex-direction: column; /* Change direction to column */
+        align-items: center;
+        margin-bottom: 30px; /* Add spacing between divs */
+    }
+
+    .průběh .ikona {
+        width: 40px; /* Make the icon smaller */
+        height: auto;
+        margin-bottom: 10px; /* Add spacing between icon and heading */
+    }
+
+    .průběh h3 {
+        font-size: 1.25rem; /* Adjust font size of the heading */
+        margin: 0; /* Reset margin */
+    }
+
+    .průběh p {
+        font-size: 1rem; /* Adjust font size of the paragraph */
+        margin: 0; /* Reset margin */
+    }
+}
+
+@media (max-width: 500px) {
+    .footer {
+        flex-direction: column; /* Change direction to column */
+    }
+
+    .footerleft {
+        order: 2; /* Move .footerleft to the bottom */
+        margin-top: 20px; /* Add space between .social-icons and .footerleft */
+    }
+
+    .social-icons {
+        order: 1; /* Move .social-icons to the top */
+    }
+}
